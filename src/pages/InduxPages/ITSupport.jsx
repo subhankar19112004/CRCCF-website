@@ -1,0 +1,16 @@
+import React from "react";
+
+const ITSupport = () => {
+  return (
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 sm:py-14">
+      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-3">
+        IT Support
+      </h1>
+      <p className="text-slate-600 max-w-3xl">
+        Describe support plans, SLAs, coverage hours, escalation contacts, etc. Placeholder content.
+      </p>
+    </section>
+  );
+};
+
+export default ITSupport;
