@@ -93,6 +93,7 @@ import SuccessStoriesCaseStudies from "./pages/report/SuccessStoriesCaseStudies"
 import TypesOfCyberCrimes from "./pages/report/TypesOfCyberCrimes";
 import VictimRightsSupport from "./pages/report/VictimRightsSupport";
 
+
 // --- Victim Support Pages ---
 import RightOfCybercrimeVictims from "./pages/victimSupport/RightOfCybercrimeVictims";
 import VictimAssistanceProtection from "./pages/victimSupport/VictimAssistanceProtection";
@@ -173,11 +174,23 @@ import Students from "./pages/InduxPages/Students";
 import TechnicalAssistance from "./pages/InduxPages/TechnicalAssistance";
 import Testimonials from "./pages/InduxPages/Testimonials";
 
-
-
-
-
-
+// Department landing + 12 detail pages
+import DepartmentLanding from "./pages/department/DepartmentLanding.jsx";
+import AdminStativeDepartment from "./pages/department/AdminStativeDepartment.jsx";
+import HRDepartment from "./pages/department/HRDepartment.jsx";
+import LegalDepartment from "./pages/department/LegalDepartment.jsx";
+import CyberInvestigationDepartment from "./pages/department/CyberInvestigationDepartment.jsx";
+import ITDepartment from "./pages/department/ITDepartment.jsx";
+import FinanceDepartment from "./pages/department/FinanceDepartment.jsx";
+import EducationDepartment from "./pages/department/EducationDepartment.jsx";
+import CyberSecurityDepartment from "./pages/department/CyberSecurityDepartment.jsx";
+import InternshipDepartment from "./pages/department/InternshipDepartment.jsx";
+import TrainingDepartment from "./pages/department/TrainingDepartment.jsx";
+import CyberAwaranesDepartment from "./pages/department/CyberAwaranesDepartment.jsx";
+import RevenueDepartment from "./pages/department/RevenueDepartment.jsx";
+import OurAchievements from "./pages/InduxPages/OurAchievements.jsx";
+import OurStory from "./pages/InduxPages/OurStory.jsx";
+import MediaAndPress from "./pages/InduxPages/MediaAndPress.jsx";
 
 const pageVariants = {
   initial: { opacity: 0, y: 30 },
@@ -196,170 +209,1877 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         {/* --- Main Pages --- */}
-        <Route path="/" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Home /></motion.div>} />
-        <Route path="/about" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><AboutUs /></motion.div>} />
-        <Route path="/contact-us" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ContactUs /></motion.div>} />
-        <Route path="/cyber-education" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberEducation /></motion.div>} />
-        <Route path="/gallery" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Gallery /></motion.div>} />
-        <Route path="/recruitment-process" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RecruimentProcess /></motion.div>} />
-        <Route path="/report-a-cyber-crime" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ReportACyberCrime /></motion.div>} />
-        <Route path="/resource-and-download" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ResourceAndDownload /></motion.div>} />
-        <Route path="/software-services" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SoftwareServices /></motion.div>} />
+        <Route
+          path="/"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Home />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <AboutUs />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/contact-us"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ContactUs />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/cyber-education"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberEducation />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/gallery"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Gallery />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruimentProcess />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report-a-cyber-crime"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ReportACyberCrime />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resource-and-download"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ResourceAndDownload />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software-services"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SoftwareServices />
+            </motion.div>
+          }
+        />
 
         {/* --- About Pages --- */}
-        <Route path="/about/introduction" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><IntroductionOfCRCCF /></motion.div>} />
-        <Route path="/about/what-we-do" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><WhatWeDo /></motion.div>} />
-        <Route path="/about/mission-vision" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><MissionVision /></motion.div>} />
-        <Route path="/about/purpose" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Purpose /></motion.div>} />
-        <Route path="/about/activity" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Activity /></motion.div>} />
-        <Route path="/about/objective" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Objective /></motion.div>} />
-        <Route path="/about/service" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Service /></motion.div>} />
-        <Route path="/about/privacy-policy" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><PrivacyPolicy /></motion.div>} />
-        <Route path="/about/data-protection-policy" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DataProtectionPolicy /></motion.div>} />
-        <Route path="/about/gdpr" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><GDPR /></motion.div>} />
-        <Route path="/about/terms" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Terms /></motion.div>} />
-        <Route path="/about/rules-regulation" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RulesRegulation /></motion.div>} />
-        <Route path="/about/guidelines" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Guidelines /></motion.div>} />
-        <Route path="/about/instruction" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Instruction /></motion.div>} />
-        <Route path="/about/legal-disclaimer" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><LegalDisclaimer /></motion.div>} />
-        <Route path="/about/copyright-registration" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CopyrightRegistration /></motion.div>} />
-        <Route path="/about/legal-compliance" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><LegalCompliance /></motion.div>} />
-        <Route path="/about/department" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Department /></motion.div>} />
-        <Route path="/about/history" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><History /></motion.div>} />
-        <Route path="/about/partnerships" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Partnerships /></motion.div>} />
+        <Route
+          path="/about/introduction"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <IntroductionOfCRCCF />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/what-we-do"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <WhatWeDo />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/mission-vision"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <MissionVision />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/purpose"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Purpose />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/activity"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Activity />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/objective"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Objective />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/service"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Service />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/privacy-policy"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <PrivacyPolicy />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/data-protection-policy"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DataProtectionPolicy />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/gdpr"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <GDPR />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/terms"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Terms />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/rules-regulation"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RulesRegulation />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/guidelines"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Guidelines />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/instruction"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Instruction />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-disclaimer"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <LegalDisclaimer />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/copyright-registration"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CopyrightRegistration />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <LegalCompliance />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Department />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/history"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <History />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/partnerships"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Partnerships />
+            </motion.div>
+          }
+        />
 
         {/* --- Recruitment Pages --- */}
-        <Route path="/recruitment-process/job-vacancy" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><JobVacancy /></motion.div>} />
-        <Route path="/recruitment-process/recruitment-rules-policies" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RecruitmentRulesPolicies /></motion.div>} />
-        <Route path="/recruitment-process/recruitment-guideline" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RecruitmentGuideline /></motion.div>} />
-        <Route path="/recruitment-process/recruitment-instructions" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RecruitmentInstructions /></motion.div>} />
-        <Route path="/recruitment-process/rti" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RTI /></motion.div>} />
-        <Route path="/recruitment-process/eligibility-criteria" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><EligibilityCriteria /></motion.div>} />
-        <Route path="/recruitment-process/job-descriptions" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><JobDescriptions /></motion.div>} />
-        <Route path="/recruitment-process/recruitment-calendar" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RecruitmentCalendar /></motion.div>} />
-        <Route path="/recruitment-process/selection-process" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SelectionProcess /></motion.div>} />
-        <Route path="/recruitment-process/selection-list" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SelectionList /></motion.div>} />
-        <Route path="/recruitment-process/press-release" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><PressRelease /></motion.div>} />
-        <Route path="/recruitment-process/check-status" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CheckStatus /></motion.div>} />
+        <Route
+          path="/recruitment-process/job-vacancy"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <JobVacancy />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/recruitment-rules-policies"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruitmentRulesPolicies />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/recruitment-guideline"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruitmentGuideline />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/recruitment-instructions"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruitmentInstructions />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/rti"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RTI />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/eligibility-criteria"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EligibilityCriteria />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/job-descriptions"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <JobDescriptions />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/recruitment-calendar"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruitmentCalendar />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/selection-process"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SelectionProcess />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/selection-list"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SelectionList />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/press-release"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <PressRelease />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/check-status"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CheckStatus />
+            </motion.div>
+          }
+        />
 
         {/* --- Legal Compliance Pages --- */}
-        <Route path="/about/legal-compliance/our-legal-identity" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OurLegalIdentity /></motion.div>} />
-        <Route path="/about/legal-compliance/our-legal-entity" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OurLegalEntity /></motion.div>} />
-        <Route path="/about/legal-compliance/legal-authorizations-cyber-licenses" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><LegalAuthorizationsCyberLicenses /></motion.div>} />
-        <Route path="/about/legal-compliance/legal-right-operational-limits" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><LegalRightOperationalLimits /></motion.div>} />
-        <Route path="/about/legal-compliance/crccf-legal-rights" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CRCCFLegalRights /></motion.div>} />
-        <Route path="/about/legal-compliance/legal-ethical-compliance" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><LegalEthicalCompliance /></motion.div>} />
-        <Route path="/about/legal-compliance/cyber-crime-investigation-approval" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberCrimeInvestigationApproval /></motion.div>} />
-        <Route path="/about/legal-compliance/our-cyber-investigation-capacity" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OurCyberInvestigationCapacity /></motion.div>} />
-        <Route path="/about/legal-compliance/digital-investigation-infrastructure" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalInvestigationInfrastructure /></motion.div>} />
-        <Route path="/about/legal-compliance/our-role-in-cybercrime-investigation" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OurRoleInCybercrimeInvestigation /></motion.div>} />
-        <Route path="/about/legal-compliance/investigation-scope-social-responsibility" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><InvestigationScopeSocialResponsibility /></motion.div>} />
-        <Route path="/about/legal-compliance/cyber-investigation-compliance-framework" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberInvestigationComplianceFramework /></motion.div>} />
-        <Route path="/about/legal-compliance/investigation-ethics-legal-standards" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><InvestigationEthicsLegalStandards /></motion.div>} />
-        <Route path="/about/legal-compliance/cyber-security-investigation-protocols" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberSecurityInvestigationProtocols /></motion.div>} />
-        <Route path="/about/legal-compliance/digital-security-certification" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalSecurityCertification /></motion.div>} />
-        <Route path="/about/legal-compliance/operational-resources-team" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OperationalResourcesTeam /></motion.div>} />
-        <Route path="/about/legal-compliance/cybercrime-response-capabilities" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CybercrimeResponseCapabilities /></motion.div>} />
-        <Route path="/about/legal-compliance/team-tool-tech-capacity" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><TeamToolTechCapacity /></motion.div>} />
-        <Route path="/about/legal-compliance/compliance-with-indian-cyber-laws" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ComplianceWithIndianCyberLaws /></motion.div>} />
-        <Route path="/about/legal-compliance/cyber-law-compliance-standards" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberLawComplianceStandards /></motion.div>} />
-        <Route path="/about/legal-compliance/compliance-with-cybercrime-regulation" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ComplianceWithCybercrimeRegulation /></motion.div>} />
-        <Route path="/about/legal-compliance/cybercrime-compliance-framework" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CybercrimeComplianceFramework /></motion.div>} />
-        <Route path="/about/legal-compliance/resource-and-report" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ResourceReport /></motion.div>} />
-        <Route path="/about/legal-compliance/recognized-power-responsibility" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RecognizedPowerResponsibility /></motion.div>} />
+        <Route
+          path="/about/legal-compliance/our-legal-identity"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OurLegalIdentity />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/our-legal-entity"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OurLegalEntity />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/legal-authorizations-cyber-licenses"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <LegalAuthorizationsCyberLicenses />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/legal-right-operational-limits"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <LegalRightOperationalLimits />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/crccf-legal-rights"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CRCCFLegalRights />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/legal-ethical-compliance"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <LegalEthicalCompliance />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/cyber-crime-investigation-approval"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberCrimeInvestigationApproval />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/our-cyber-investigation-capacity"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OurCyberInvestigationCapacity />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/digital-investigation-infrastructure"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalInvestigationInfrastructure />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/our-role-in-cybercrime-investigation"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OurRoleInCybercrimeInvestigation />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/investigation-scope-social-responsibility"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <InvestigationScopeSocialResponsibility />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/cyber-investigation-compliance-framework"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberInvestigationComplianceFramework />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/investigation-ethics-legal-standards"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <InvestigationEthicsLegalStandards />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/cyber-security-investigation-protocols"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberSecurityInvestigationProtocols />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/digital-security-certification"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalSecurityCertification />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/operational-resources-team"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OperationalResourcesTeam />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/cybercrime-response-capabilities"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CybercrimeResponseCapabilities />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/team-tool-tech-capacity"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <TeamToolTechCapacity />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/compliance-with-indian-cyber-laws"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ComplianceWithIndianCyberLaws />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/cyber-law-compliance-standards"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberLawComplianceStandards />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/compliance-with-cybercrime-regulation"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ComplianceWithCybercrimeRegulation />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/cybercrime-compliance-framework"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CybercrimeComplianceFramework />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/resource-and-report"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ResourceReport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about/legal-compliance/recognized-power-responsibility"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecognizedPowerResponsibility />
+            </motion.div>
+          }
+        />
 
         {/* --- Report Pages --- */}
-        <Route path="/report/anonymous-tip-report" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><AnonymousTipReport /></motion.div>} />
-        <Route path="/report/check-complaint-status" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CheckComplaintStatus /></motion.div>} />
-        <Route path="/report/compliant-registration" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CompliantRegistration /></motion.div>} />
-        <Route path="/report/cyber-crime-faqs" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberCrimeFAQs /></motion.div>} />
-        <Route path="/report/cyber-crime-lawyers" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberCrimeLawyers /></motion.div>} />
-        <Route path="/report/cybercrime-reporter" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberCrimeReporter /></motion.div>} />
-        <Route path="/report/cyber-laws-rights" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberLawsRights /></motion.div>} />
-        <Route path="/report/cyber-security-tips" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberSecurityTips /></motion.div>} />
-        <Route path="/report/emergency-helpline-contact" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><EmergencyHelplineContact /></motion.div>} />
-        <Route path="/report/legal-guidance-awareness" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><LegalGuidanceAwareness /></motion.div>} />
-        <Route path="/report/members-registration" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><MembersRegistration /></motion.div>} />
-        <Route path="/report/online-safety-tips" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OnlineSafetyTips /></motion.div>} />
-        <Route path="/report/report-a-cyber-crime-landing" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ReportACyberCrimeLanding /></motion.div>} />
-        <Route path="/report/step-by-step-guide" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><StepByStepGuide /></motion.div>} />
-        <Route path="/report/success-stories-case-studies" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SuccessStoriesCaseStudies /></motion.div>} />
-        <Route path="/report/types-of-cyber-crimes" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><TypesOfCyberCrimes /></motion.div>} />
-        <Route path="/report/victim-rights-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><VictimRightsSupport /></motion.div>} />
-
+        <Route
+          path="/report/anonymous-tip-report"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <AnonymousTipReport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/check-complaint-status"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CheckComplaintStatus />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/compliant-registration"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CompliantRegistration />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/cyber-crime-faqs"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberCrimeFAQs />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/cyber-crime-lawyers"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberCrimeLawyers />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/cybercrime-reporter"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberCrimeReporter />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/cyber-laws-rights"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberLawsRights />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/cyber-security-tips"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberSecurityTips />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/emergency-helpline-contact"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EmergencyHelplineContact />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/legal-guidance-awareness"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <LegalGuidanceAwareness />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/members-registration"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <MembersRegistration />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/online-safety-tips"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OnlineSafetyTips />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/report-a-cyber-crime-landing"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ReportACyberCrimeLanding />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/step-by-step-guide"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <StepByStepGuide />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/success-stories-case-studies"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SuccessStoriesCaseStudies />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/types-of-cyber-crimes"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <TypesOfCyberCrimes />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <VictimRightsSupport />
+            </motion.div>
+          }
+        />
 
         {/* Victim Support Individual Pages */}
-        <Route path="/report/victim-rights-support/right-of-cybercrime-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RightOfCybercrimeVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/victim-assistance-protection" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><VictimAssistanceProtection /></motion.div>} />
-        <Route path="/report/victim-rights-support/cybercrime-victim-rights-relief" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CybercrimeVictimRightsRelief /></motion.div>} />
-        <Route path="/report/victim-rights-support/digital-crime-victim-help-desk" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalCrimeVictimHelpDesk /></motion.div>} />
-        <Route path="/report/victim-rights-support/support-services-for-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SupportServicesForVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/help-justice-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><HelpJusticeVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/empowering-cybercrime-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><EmpoweringCybercrimeVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/digital-victim-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalVictimSupport /></motion.div>} />
-        <Route path="/report/victim-rights-support/victim-protection-legal-aid" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><VictimProtectionLegalAid /></motion.div>} />
-        <Route path="/report/victim-rights-support/online-harassment-help-rights" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OnlineHarassmentHelpRights /></motion.div>} />
-        <Route path="/report/victim-rights-support/cyber-justice-for-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberJusticeForVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/cybercrime-victim-advocacy" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CybercrimeVictimAdvocacy /></motion.div>} />
-        <Route path="/report/victim-rights-support/online-safety-victim-help" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OnlineSafetyVictimHelp /></motion.div>} />
-        <Route path="/report/victim-rights-support/justice-healing-for-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><JusticeHealingForVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/restoring-dignity-cyber-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><RestoringDignityCyberVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/digital-justice-support-services" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalJusticeSupportServices /></motion.div>} />
-        <Route path="/report/victim-rights-support/victim-outreach-legal-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><VictimOutreachLegalSupport /></motion.div>} />
-        <Route path="/report/victim-rights-support/psychological-counselling-cyber-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><PsychologicalCounsellingCyberVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/victim-helpline-chat-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><VictimHelplineChatSupport /></motion.div>} />
-        <Route path="/report/victim-rights-support/women-child-cyber-safety-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><WomenChildCyberSafetySupport /></motion.div>} />
-        <Route path="/report/victim-rights-support/legal-guidance-digital-crime-victims" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><LegalGuidanceDigitalCrimeVictims /></motion.div>} />
-        <Route path="/report/victim-rights-support/data-privacy-protection-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DataPrivacyProtectionSupport /></motion.div>} />
-        <Route path="/report/victim-rights-support/social-media-misuse-victim-aid" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SocialMediaMisuseVictimAid /></motion.div>} />
-        <Route path="/report/victim-rights-support/phishing-online-scam-victim-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><PhishingOnlineScamVictimSupport /></motion.div>} />
-        <Route path="/report/victim-rights-support/cyber-extortion-blackmail-response" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberExtortionBlackmailResponse /></motion.div>} />
-        <Route path="/report/victim-rights-support/digital-forensics-victim-assistance" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalForensicsVictimAssistance /></motion.div>} />
-        <Route path="/report/victim-rights-support/educational-resources-victim-rights" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><EducationalResourcesVictimRights /></motion.div>} />
-        <Route path="/report/victim-rights-support/cyber-victim-relief-emergency-response" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberVictimReliefEmergencyResponse /></motion.div>} />
+        <Route
+          path="/report/victim-rights-support/right-of-cybercrime-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RightOfCybercrimeVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/victim-assistance-protection"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <VictimAssistanceProtection />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/cybercrime-victim-rights-relief"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CybercrimeVictimRightsRelief />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/digital-crime-victim-help-desk"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalCrimeVictimHelpDesk />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/support-services-for-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SupportServicesForVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/help-justice-for-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <HelpJusticeVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/empowering-cybercrime-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EmpoweringCybercrimeVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/digital-victim-support-protection"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalVictimSupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/victim-protection-legal-aid"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <VictimProtectionLegalAid />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/online-harassment-help-rights"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OnlineHarassmentHelpRights />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/cyber-justice-for-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberJusticeForVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/cybercrime-victim-advocacy"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CybercrimeVictimAdvocacy />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/online-safety-victim-help"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OnlineSafetyVictimHelp />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/justice-healing-for-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <JusticeHealingForVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/restoring-dignity-to-cyber-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RestoringDignityCyberVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/digital-justice-support-services"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalJusticeSupportServices />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/victim-outreach-legal-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <VictimOutreachLegalSupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/psychological-counselling-for-cyber-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <PsychologicalCounsellingCyberVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/24x7-victim-helpline-chat-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <VictimHelplineChatSupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/women-child-cyber-safety-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <WomenChildCyberSafetySupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/legal-guidance-digital-crime-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <LegalGuidanceDigitalCrimeVictims />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/data-privacy-protection-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DataPrivacyProtectionSupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/social-media-misuse-victim-aid"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SocialMediaMisuseVictimAid />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/phishing-online-scam-victim-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <PhishingOnlineScamVictimSupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/cyber-extortion-blackmail-response-team"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberExtortionBlackmailResponse />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/digital-forensics-assistance-for-victims"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalForensicsVictimAssistance />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/educational-resources-for-victim-rights"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EducationalResourcesVictimRights />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/report/victim-rights-support/cyber-victim-relief-emergency-response"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberVictimReliefEmergencyResponse />
+            </motion.div>
+          }
+        />
 
         {/* --- Resource Landing & Individual Pages --- */}
-        <Route path="/resources/digital-resource-centre" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalResourceCentre /></motion.div>} />
-        <Route path="/resources/cyber-vault" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberVault /></motion.div>} />
-        <Route path="/resources/investigation-toolkit" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><InvestigationToolkit /></motion.div>} />
-        <Route path="/resources/knowledge-download-hub" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><KnowledgeDownloadHub /></motion.div>} />
-        <Route path="/resources/cyber-security-resources" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CyberSecurityResources /></motion.div>} />
-        <Route path="/resources/documents-utilities" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DocumentsUtilities /></motion.div>} />
-        <Route path="/resources/tech-tools-report" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><TechToolsReport /></motion.div>} />
-        <Route path="/resources/resources-compliance" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ResourcesCompliance /></motion.div>} />
-        <Route path="/resources/e-library-downloads" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ELibraryDownloads /></motion.div>} />
-        <Route path="/resources/security-docs-kits" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SecurityDocsKits /></motion.div>} />
-        <Route path="/resources/victim-assistance-forms" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><VictimAssistanceForms /></motion.div>} />
-        <Route path="/resources/case-study-library" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CaseStudyLibrary /></motion.div>} />
-
+        <Route
+          path="/resources/digital-resource-centre"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalResourceCentre />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/cyber-vault"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberVault />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/investigation-toolkit"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <InvestigationToolkit />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/knowledge-download-hub"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <KnowledgeDownloadHub />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/cyber-security-resources"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberSecurityResources />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/documents-utilities"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DocumentsUtilities />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/tech-tools-report"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <TechToolsReport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/resources-compliance"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ResourcesCompliance />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/e-library-downloads"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ELibraryDownloads />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/security-docs-kits"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SecurityDocsKits />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/victim-assistance-forms"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <VictimAssistanceForms />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resources/case-study-library"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CaseStudyLibrary />
+            </motion.div>
+          }
+        />
 
         {/* --- Software Services Pages --- */}
-        <Route path="/software/custom-software-development" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CustomSoftwareDevelopment /></motion.div>} />
-        <Route path="/software/web-mobile-app-development" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><WebMobileAppDevelopment /></motion.div>} />
-        <Route path="/software/enterprise-solution" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><EnterpriseSolution /></motion.div>} />
-        <Route path="/software/ai-big-data-analytics" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><AIBigDataAnalytics /></motion.div>} />
-        <Route path="/software/cloud-based-software-solutions" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CloudBasedSoftwareSolutions /></motion.div>} />
-        <Route path="/software/cybersecurity-threat-protection" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><CybersecurityThreatProtection /></motion.div>} />
-        <Route path="/software/digital-forensic-evidence-management" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalForensicEvidenceManagement /></motion.div>} />
-        <Route path="/software/blockchain-fintech-solutions" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><BlockchainFintechSolutions /></motion.div>} />
-        <Route path="/software/iot-smart-device-software" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><IoTSmartDeviceSoftware /></motion.div>} />
-        <Route path="/software/workflow-tools" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><WorkflowTools /></motion.div>} />
-        <Route path="/software/saas-api-integration" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SaaSApiIntegration /></motion.div>} />
-        <Route path="/software/software-consultation-audit-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SoftwareConsultationAuditSupport /></motion.div>} />
-        <Route path="/software/digital-forensics-tools" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DigitalForensicsTools /></motion.div>} />
-        <Route path="/software/software-consultation-audit" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SoftwareConsultationAudit /></motion.div>} />
-        <Route path="/software/identity-access-management-tools" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><IdentityAccessManagementTools /></motion.div>} />
-        <Route path="/software/software-testing-qa" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><SoftwareTestingQA /></motion.div>} />
-        <Route path="/software/devops" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><DevOps /></motion.div>} />
-        <Route path="/software/ui-ux-design" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><UIUXDesign /></motion.div>} />
-        <Route path="/software/product-maintenance-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ProductMaintenanceSupport /></motion.div>} />
-        <Route path="/software/industry-specific-solutions" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><IndustrySpecificSolutions /></motion.div>} />
+        <Route
+          path="/software/custom-software-development"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CustomSoftwareDevelopment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/web-mobile-app-development"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <WebMobileAppDevelopment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/enterprise-solution"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EnterpriseSolution />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/ai-big-data-analytics"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <AIBigDataAnalytics />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/cloud-based-software-solutions"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CloudBasedSoftwareSolutions />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/cybersecurity-threat-protection"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CybersecurityThreatProtection />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/digital-forensic-evidence-management"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalForensicEvidenceManagement />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/blockchain-fintech-solutions"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <BlockchainFintechSolutions />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/iot-smart-device-software"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <IoTSmartDeviceSoftware />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/workflow-tools"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <WorkflowTools />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/saas-api-integration"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SaaSApiIntegration />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/software-consultation-audit-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SoftwareConsultationAuditSupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/digital-forensics-tools"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DigitalForensicsTools />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/software-consultation-audit"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SoftwareConsultationAudit />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/identity-access-management-tools"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <IdentityAccessManagementTools />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/software-testing-qa"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <SoftwareTestingQA />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/devops"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DevOps />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/ui-ux-design"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <UIUXDesign />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/product-maintenance-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ProductMaintenanceSupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/software/industry-specific-solutions"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <IndustrySpecificSolutions />
+            </motion.div>
+          }
+        />
 
         {/* --- Cyber Education Pages --- */}
         <Route
           path="/cyber-education/software-education"
           element={
-            <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
               <SoftwareEducation />
             </motion.div>
           }
@@ -367,7 +2087,12 @@ const AnimatedRoutes = () => {
         <Route
           path="/cyber-education/computer-education"
           element={
-            <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
               <ComputerEducation />
             </motion.div>
           }
@@ -375,7 +2100,12 @@ const AnimatedRoutes = () => {
         <Route
           path="/cyber-education/legal-education"
           element={
-            <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
               <LegalEducation />
             </motion.div>
           }
@@ -383,25 +2113,320 @@ const AnimatedRoutes = () => {
         <Route
           path="/cyber-education/cyber-education"
           element={
-            <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit">
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
               <CyberEducationDetails />
             </motion.div>
           }
         />
 
         {/* --- Indux Pages --- */}
-        <Route path="/clients" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Clients /></motion.div>} />
-        <Route path="/it-support" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><ITSupport /></motion.div>} />
-        <Route path="/reviews" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Reviews /></motion.div>} />
-        <Route path="/our-team-overview" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><OurTeamOverview /></motion.div>} />
-        <Route path="/students" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Students /></motion.div>} />
-        <Route path="/technical-assistance" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><TechnicalAssistance /></motion.div>} />
-        <Route path="/testimonials" element={<motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit"><Testimonials /></motion.div>} />
+        <Route
+          path="/clients"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Clients />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/it-support"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ITSupport />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/reviews"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Reviews />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/achievements"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OurAchievements />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/story"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OurStory />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/media-press"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <MediaAndPress />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/our-team-overview"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <OurTeamOverview />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/students"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Students />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/technical-assistance"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <TechnicalAssistance />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/testimonials"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <Testimonials />
+            </motion.div>
+          }
+        />
 
+        {/* === Department Landing + 12 Detail Pages === */}
+        <Route
+          path="/department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <DepartmentLanding />
+            </motion.div>
+          }
+        />
 
-        
-
-
+        <Route
+          path="/department/admin-stative-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <AdminStativeDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/hr-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <HRDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/legal-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <LegalDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/cyber-investigation-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberInvestigationDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/it-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ITDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/finance-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <FinanceDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/education-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EducationDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/cyber-security-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberSecurityDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/internship-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <InternshipDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/training-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <TrainingDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/cyber-awaranes-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CyberAwaranesDepartment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/department/revenue-department"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RevenueDepartment />
+            </motion.div>
+          }
+        />
       </Routes>
     </AnimatePresence>
   );
