@@ -1035,7 +1035,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/about/legal-compliance/resource-and-report"
+          path="/about/legal-compliance/resource-report"
           element={
             <motion.div
               variants={pageVariants}
