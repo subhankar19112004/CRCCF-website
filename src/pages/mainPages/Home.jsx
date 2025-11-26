@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import OurTeam from "./OurTeam";
 import Indux from "./Indux";
+import Marquee from "./Marquee.jsx";
 // Adjust the import path as needed
 
 const slides = [
@@ -79,142 +80,6 @@ const slides = [
     color: "from-rose-900/80",
   },
 ];
-
-// const services = [
-//   {
-//     title: "Victim Support",
-//     description: "Counseling and recovery services for cybercrime survivors",
-//     icon: <HeartHandshake className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-gray-800 to-black",
-//     features: ["Trauma counseling", "Case management"],
-//   },
-//   {
-//     title: "Legal Support",
-//     description: "Comprehensive legal assistance for cybercrime-related cases",
-//     icon: <Gavel className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-indigo-600 to-blue-700",
-//     features: ["Legal consultation services", "Court representation"],
-//   },
-//   {
-//     title: "Our Client",
-//     description:
-//       "Dedicated client relationship management and support services",
-//     icon: <Users className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-teal-600 to-green-700",
-//     features: ["Personal account management", "Priority support access"],
-//   },
-//   {
-//     title: "IT Support",
-//     description:
-//       "Professional technical support and system maintenance services",
-//     icon: <Monitor className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-slate-600 to-gray-700",
-//     features: ["24/7 technical assistance", "System troubleshooting"],
-//   },
-//   {
-//     title: "Review",
-//     description: "Comprehensive service evaluation and performance assessment",
-//     icon: <Star className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-yellow-600 to-amber-700",
-//     features: ["Service quality assessment", "Performance metrics analysis"],
-//   },
-//   {
-//     title: "Our Team",
-//     description: "Meet our expert team of cybersecurity professionals",
-//     icon: <Users2 className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-cyan-600 to-blue-700",
-//     features: ["Certified cybersecurity experts", "Industry veterans"],
-//   },
-//   {
-//     title: "Our Student",
-//     description:
-//       "Educational programs and opportunities for cybersecurity students",
-//     icon: <GraduationCap className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-purple-600 to-pink-700",
-//     features: ["Internship programs", "Mentorship opportunities"],
-//   },
-//   {
-//     title: "Our Department",
-//     description:
-//       "Specialized departments handling various cybersecurity domains",
-//     icon: <Building className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-orange-600 to-red-700",
-//     features: ["Forensics division", "Incident response unit"],
-//   },
-//   {
-//     title: "Our Case Story",
-//     description:
-//       "Real-world case studies and success stories from our operations",
-//     icon: <FileText className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-lime-600 to-emerald-700",
-//     features: ["Detailed case analyses", "Problem-solving methodologies"],
-//   },
-//   {
-//     title: "News and Event",
-//     description: "Latest cybersecurity news, updates, and upcoming events",
-//     icon: <Newspaper className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-rose-600 to-pink-700",
-//     features: ["Industry news updates", "Event announcements"],
-//   },
-//   {
-//     title: "Cyber Crime Safety Tips",
-//     description: "Practical advice and best practices for cyber safety",
-//     icon: <ShieldAlert className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-violet-600 to-purple-700",
-//     features: ["Password protection guidelines", "Phishing prevention tips"],
-//   },
-//   {
-//     title: "Technical Assistance",
-//     description: "Expert technical support for cybersecurity implementations",
-//     icon: <Wrench className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-gray-600 to-slate-700",
-//     features: ["System configuration support", "Technical troubleshooting"],
-//   },
-//   {
-//     title: "Training & Awareness",
-//     description: "Comprehensive cybersecurity education and awareness programs",
-//     icon: <BookOpen className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-blue-600 to-cyan-700",
-//     features: ["Employee training sessions", "Security awareness campaigns"],
-//   },
-//   {
-//     title: "Testimonials",
-//     description: "Client feedback and success stories about our services",
-//     icon: <MessageSquare className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-green-600 to-teal-700",
-//     features: ["Client satisfaction stories", "Service impact testimonials"],
-//   },
-//   {
-//     title: "Case Studies",
-//     description: "In-depth analysis of real cybersecurity cases and solutions",
-//     icon: <FileSearch className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-amber-600 to-orange-700",
-//     features: ["Detailed problem analysis", "Solution implementation"],
-//   },
-//   {
-//     title: "Our Courses",
-//     description:
-//       "Comprehensive cybersecurity training courses and certifications",
-//     icon: <Book className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-red-600 to-rose-700",
-//     features: ["Beginner to advanced levels", "Certification programs"],
-//   },
-//   {
-//     title: "Cyber Crime Prevention",
-//     description: "Proactive measures and strategies to prevent cyber crimes",
-//     icon: <ShieldCheck className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-emerald-600 to-green-700",
-//     features: ["Risk assessment services", "Preventive strategy development"],
-//   },
-//   {
-//     title: "Innovation and Technology",
-//     description:
-//       "Cutting-edge technological solutions and innovative approaches",
-//     icon: <Cpu className="w-8 h-8" />,
-//     color: "bg-gradient-to-br from-pink-600 to-rose-700",
-//     features: ["Emerging technology adoption", "Research and development"],
-//   },
-// ];
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -462,9 +327,11 @@ const Home = () => {
         </div>
       </div>
 
+      <Marquee/>
+
       {/* Content Below Slider */}
       <div className="relative bg-white/80 backdrop-blur-sm">
-        <div className="max-w-9xl mx-auto px-6 py-24">
+        <div className="max-w-9xl  px-6 py-10">
           <section id="services" className="mb-18">
             
             <Indux/>

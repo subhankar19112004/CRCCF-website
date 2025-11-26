@@ -20,7 +20,7 @@ const AboutUsDetail = () => {
       {/* Breadcrumb */}
       <nav className="text-sm mb-6">
         <Link to="/" className="text-blue-600 hover:underline">Home</Link> /&nbsp;
-        <Link to="/about" className="text-blue-600 hover:underline">About Us</Link> /&nbsp;
+        <Link to="/#services" className="text-blue-600 hover:underline">Explore more services</Link> /&nbsp;
         <span className="text-gray-700">{item.title}</span>
       </nav>
 

@@ -23,10 +23,10 @@ const GDPR = () => {
           information and providing full rights to data owners.
         </p>
         <Link
-          to="/about"
+          to="/services#"
           className="inline-flex items-center px-5 py-2 rounded-lg bg-teal-600 text-white hover:bg-teal-700 transition-all"
         >
-          <FiArrowLeft className="mr-2" /> Back to About Us
+          <FiArrowLeft className="mr-2" /> Explore more services
         </Link>
       </motion.div>
     </section>

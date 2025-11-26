@@ -601,7 +601,7 @@ const Footer = () => {
     { label: "IT and Software", path: "/software-services" },
     { label: "Gallery", path: "/gallery" },
     { label: "Recruitment Process", path: "/recruitment-process" },
-    { label: "Cyber Crime Report", path: "/report-a-cyber-crime" },
+    { label: "Report a Cyber Crime", path: "/report-a-cyber-crime" },
     { label: "Resource and download", path: "/resource-and-download" },
     { label: "Contact Us", path: "/contact-us" },
   ];

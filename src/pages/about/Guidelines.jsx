@@ -20,8 +20,8 @@ const Guidelines = () => {
         <p className="text-gray-600 mb-8">
           These guidelines are easy to follow and available to all stakeholders.
         </p>
-        <Link to="/about" className="inline-flex items-center px-5 py-2 rounded-lg bg-purple-600 text-white hover:bg-purple-700 transition-all">
-          <FiArrowLeft className="mr-2" /> Back to About Us
+        <Link to="/services#" className="inline-flex items-center px-5 py-2 rounded-lg bg-purple-600 text-white hover:bg-purple-700 transition-all">
+          <FiArrowLeft className="mr-2" /> Explore more services
         </Link>
       </motion.div>
     </section>

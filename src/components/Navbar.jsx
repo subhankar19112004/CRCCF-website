@@ -296,7 +296,7 @@ const NAV_ITEMS = [
   { label: "Gallery", path: "/gallery" },
   { label: "IT and Software", path: "/software-services" },
   { label: "Resource and Download", path: "/resource-and-download" },
-  { label: "Cyber crime report", path: "/report-a-cyber-crime" },
+  { label: "Report a Cyber Crime", path: "/report-a-cyber-crime" },
   { label: "Recruitment Process", path: "/recruitment-process" },
   { label: "Contact Us", path: "/contact-us" },
 ];

@@ -20,8 +20,8 @@ const History = () => {
         <p className="text-gray-600 mb-8">
           Our history showcases our continuous commitment to national security.
         </p>
-        <Link to="/about" className="inline-flex items-center px-5 py-2 rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition-all">
-          <FiArrowLeft className="mr-2" /> Back to About Us
+        <Link to="/services#" className="inline-flex items-center px-5 py-2 rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition-all">
+          <FiArrowLeft className="mr-2" /> Explore more services
         </Link>
       </motion.div>
     </section>

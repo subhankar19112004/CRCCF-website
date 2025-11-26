@@ -25,10 +25,10 @@ const DataProtectionPolicy = () => {
           access.
         </p>
         <Link
-          to="/about"
+          to="/#services"
           className="inline-flex items-center px-5 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all"
         >
-          <FiArrowLeft className="mr-2" /> Back to About Us
+          <FiArrowLeft className="mr-2" />Explore more services
         </Link>
       </motion.div>
     </section>

@@ -1,0 +1,19 @@
+export const educationConsultancyWebDevlopmentData = [
+  {
+    id: "sec1-26-education-consultancy-website-development",
+    heading: "Educational Consultancy Website Development",
+    content:
+      "Educational Consultancy Website Development\n\n" +
+      "Empowering education through technology, strategy, and trust-driven digital platforms.\n\n" +
+      "Educational consultancies act as the guiding bridge between students and institutions, helping aspirants navigate complex admission systems, course selections, visa applications, and global academic opportunities. In this increasingly digital ecosystem, having a robust and well-designed website is no longer optional — it’s a necessity. CRCCF understands that an educational consultancy’s website isn’t just an online brochure; it’s a **24/7 counselor, a trusted advisor, and a digital extension of institutional credibility**. We specialize in developing dynamic, secure, and high-performance platforms that reflect professionalism, inspire confidence, and streamline operations — from inquiry to enrollment.\n\n" +
+      "An educational consultancy website developed under CRCCF’s expert framework focuses on user-centric design, data privacy, and seamless backend automation. We integrate intelligent enquiry forms, lead management dashboards, CRM connectivity, and real-time chat assistance to ensure no potential student slips through the cracks. Each project begins with a detailed understanding of the consultancy’s unique service structure — whether it’s domestic guidance, international admissions, test preparation, or scholarship assistance. We then craft a digital ecosystem that not only attracts organic traffic but also converts visitors into confident applicants through clear information, easy navigation, and transparent processes.\n\n" +
+      "Strategic Development & Key Features\n\n" +
+      "**Global University & Course Directory:** Comprehensive, searchable databases with detailed information on academic institutions, programs, eligibility criteria, and fee structures.\n\n" +
+      "**Client Portal & Application Tracker:** Secured individual dashboards for students to upload documents, track application status (e.g., submitted, under review, accepted), and view communication history with their consultant.\n\n" +
+      "**Integrated Booking & Assessment Tools:** Automated scheduling for one-on-one counseling sessions, trial classes, and aptitude tests. Optional features include online proctoring for mock exams.\n\n" +
+      "**Compliance & Data Security:** Full adherence to the **Indian IT Act, 2000**, and global privacy standards like **GDPR** for securing sensitive student data, financial records, and confidential documents.\n\n" +
+      "**Visa & Immigration Guidance Modules:** Clear, categorized sections for documentation checklists, interview preparation tips, and up-to-date policy changes for various countries.\n\n" +
+      "**Dynamic Content Management System (CMS):** Easy-to-manage backend to update news, policy changes, success stories, student testimonials, and admission deadlines in real time.\n\n" +
+      "CRCCF is committed to empowering the education sector with digital platforms that prioritize student success, institutional integrity, and lawful operation. Our development methodology is built on trust, delivering a reliable, affordable, and high-quality solution that transforms your consultancy’s online presence into a robust digital recruitment channel. Our mission is simple — to build a digital presence that educates, inspires, and delivers measurable impact."
+  },
+];

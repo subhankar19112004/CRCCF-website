@@ -5,8 +5,7 @@ import {
   FiFlag,
   FiEdit,
   FiInfo,
-  FiUserCheck,
-  FiFileText,
+ 
   FiCalendar,
   FiCheckCircle,
   FiList,
@@ -48,8 +47,8 @@ export const recruitmentData = [
     ),
   },
   {
-    slug: "recruitment-guideline",
-    title: "Recruitment Guideline",
+    slug: "post-vacancy-members-only",
+    title: "Post Vacancy - Members Only",
     description: "Know the steps for successful recruitment.",
     icon: <FiFlag className="w-10 h-10 text-indigo-600" />,
     content: (
@@ -61,24 +60,11 @@ export const recruitmentData = [
       </>
     ),
   },
+ 
   {
-    slug: "recruitment-instructions",
-    title: "Recruitment Instructions",
-    description: "Follow the instructions for applying successfully.",
-    icon: <FiEdit className="w-10 h-10 text-indigo-600" />,
-    content: (
-      <>
-        <p>
-          Instructions guide applicants through the submission and selection
-          phases.
-        </p>
-      </>
-    ),
-  },
-  {
-    slug: "rti",
-    title: "Right to Information Recruitment (RTI)",
-    description: "Transparency through RTI information.",
+    slug: "online-application-portal",
+    title: "Online Application Portal",
+    description: "Apply for jobs through our online system.",
     icon: <FiInfo className="w-10 h-10 text-indigo-600" />,
     content: (
       <>
@@ -89,36 +75,10 @@ export const recruitmentData = [
       </>
     ),
   },
+  
   {
-    slug: "eligibility-criteria",
-    title: "Eligibility Criteria",
-    description: "Know who can apply for our positions.",
-    icon: <FiUserCheck className="w-10 h-10 text-indigo-600" />,
-    content: (
-      <>
-        <p>
-          Eligibility varies by job profile, qualification, and experience.
-        </p>
-      </>
-    ),
-  },
-  {
-    slug: "job-descriptions",
-    title: "Job Descriptions",
-    description: "Details of roles and responsibilities.",
-    icon: <FiFileText className="w-10 h-10 text-indigo-600" />,
-    content: (
-      <>
-        <p>
-          Each job profile includes required skills, experience, and
-          responsibilities.
-        </p>
-      </>
-    ),
-  },
-  {
-    slug: "recruitment-calendar",
-    title: "Recruitment Calendar",
+    slug: "recruitment-advertisements",
+    title: "Recruitment Advertisements",
     description: "Schedule of all recruitment drives.",
     icon: <FiCalendar className="w-10 h-10 text-indigo-600" />,
     content: (
@@ -131,34 +91,8 @@ export const recruitmentData = [
     ),
   },
   {
-    slug: "selection-process",
-    title: "Selection Process",
-    description: "Learn how we select candidates.",
-    icon: <FiCheckCircle className="w-10 h-10 text-indigo-600" />,
-    content: (
-      <>
-        <p>
-          The selection process involves screening, tests, and interviews.
-        </p>
-      </>
-    ),
-  },
-  {
-    slug: "selection-list",
-    title: "Selection List",
-    description: "See who made it to the list.",
-    icon: <FiList className="w-10 h-10 text-indigo-600" />,
-    content: (
-      <>
-        <p>
-          The selection list is published after final evaluation of candidates.
-        </p>
-      </>
-    ),
-  },
-  {
     slug: "press-release",
-    title: "Press Release",
+    title: "Press Release and Notices",
     description: "Official announcements from CRCCF.",
     icon: <FiMic className="w-10 h-10 text-indigo-600" />,
     content: (
@@ -172,7 +106,7 @@ export const recruitmentData = [
   },
   {
     slug: "check-status",
-    title: "Check Status",
+    title: "Application Status",
     description: "Track your recruitment status easily.",
     icon: <FiSearch className="w-10 h-10 text-indigo-600" />,
     content: (
