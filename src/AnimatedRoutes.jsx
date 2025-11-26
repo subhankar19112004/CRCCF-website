@@ -37,14 +37,6 @@ import Partnerships from "./pages/about/Partnerships";
 // --- Recruitment Pages ---
 import JobVacancy from "./pages/recruitment/JobVacancy";
 import RecruitmentRulesPolicies from "./pages/recruitment/RecruitmentRulesPolicies";
-import RecruitmentGuideline from "./pages/recruitment/RecruitmentGuideline";
-import RecruitmentInstructions from "./pages/recruitment/RecruitmentInstructions";
-import RTI from "./pages/recruitment/RTI";
-import EligibilityCriteria from "./pages/recruitment/EligibilityCriteria";
-import JobDescriptions from "./pages/recruitment/JobDescriptions";
-import RecruitmentCalendar from "./pages/recruitment/RecruitmentCalendar";
-import SelectionProcess from "./pages/recruitment/SelectionProcess";
-import SelectionList from "./pages/recruitment/SelectionList";
 import PressRelease from "./pages/recruitment/PressRelease";
 import CheckStatus from "./pages/recruitment/CheckStatus";
 
@@ -90,7 +82,7 @@ import OnlineSafetyTips from "./pages/report/OnlineSafetyTips";
 import ReportACyberCrimeLanding from "./pages/report/ReportACyberCrimeLanding";
 import StepByStepGuide from "./pages/report/StepByStepGuide";
 import SuccessStoriesCaseStudies from "./pages/report/SuccessStoriesCaseStudies";
-import TypesOfCyberCrimes from "./pages/report/TypesOfCyberCrimes";
+import CyberCrimePreventions from "./pages/report/CyberCrimePreventions.jsx";
 import VictimRightsSupport from "./pages/report/VictimRightsSupport";
 
 
@@ -191,6 +183,30 @@ import RevenueDepartment from "./pages/department/RevenueDepartment.jsx";
 import OurAchievements from "./pages/InduxPages/OurAchievements.jsx";
 import OurStory from "./pages/InduxPages/OurStory.jsx";
 import MediaAndPress from "./pages/InduxPages/MediaAndPress.jsx";
+
+// RecruitmentPages
+import RecruitmentPolicyAndEmploymentOverView from "./pages/recruitmentRulesAndPolicies/RecruitmentPolicyAndEmploymentOverView.jsx";
+import EmploymentEligibilityCriteria from "./pages/recruitmentRulesAndPolicies/EmploymentEligibilityCriteria.jsx";
+import RulesPoliciesCarrerDevelopmentProgress from "./pages/recruitmentRulesAndPolicies/RulesPoliciesCarrerDevelopmentProgress.jsx";
+import EmployeeGrowthAndFutureResposibilities from "./pages/recruitmentRulesAndPolicies/EmployeeGrowthAndFutureResposibilities.jsx";
+import ReqruitmentInstructions from "./pages/recruitmentRulesAndPolicies/ReqruitmentInstructions.jsx";
+import RecruitmentGuidelines from "./pages/recruitmentRulesAndPolicies/RecruitmentGuidelines.jsx";
+import RecruitmentAndSelectionProcess from "./pages/recruitmentRulesAndPolicies/RecruitmentAndSelectionProcess.jsx";
+import RecruitmentCalender from "./pages/recruitmentRulesAndPolicies/RecruitmentCalender.jsx";
+import CodeOfConduct from "./pages/recruitmentRulesAndPolicies/CodeOfConduct.jsx";
+import TrainingAndSkillDevelopment from "./pages/recruitmentRulesAndPolicies/TrainingAndSkillDevelopment.jsx";
+import PerformanceReviewAndEvaluationSystem from "./pages/recruitmentRulesAndPolicies/PerformanceReviewAndEvaluationSystem.jsx";
+import EmployeeRightsAndResponsibility from "./pages/recruitmentRulesAndPolicies/EmployeeRightsAndResponsibility.jsx";
+import VolunteerAndInternshipPolicy from "./pages/recruitmentRulesAndPolicies/VolunteerAndInternshipPolicy.jsx";
+import EmployeeRecognisation from "./pages/recruitmentRulesAndPolicies/EmployeeRecognisation.jsx";
+
+// Application Pages
+import StatusDetails from "./pages/recruitment/StatusDetails";
+import VictimSupportAssistance from "./pages/report/VictimSupportAssistance.jsx";
+import AnimatedRoutes2 from "./AnimatedRoutes2.jsx";
+import JobApplicationForm from "./pages/job_vacancy_pages/JobApplicationForm.jsx";
+import JobDetailsPage from "./pages/job_vacancy_pages/JobDetailsPage.jsx";
+
 
 const pageVariants = {
   initial: { opacity: 0, y: 30 },
@@ -407,7 +423,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/about/service"
+          path="/service"
           element={
             <motion.div
               variants={pageVariants}
@@ -617,110 +633,6 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/recruitment-process/recruitment-guideline"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <RecruitmentGuideline />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/recruitment-process/recruitment-instructions"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <RecruitmentInstructions />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/recruitment-process/rti"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <RTI />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/recruitment-process/eligibility-criteria"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <EligibilityCriteria />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/recruitment-process/job-descriptions"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <JobDescriptions />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/recruitment-process/recruitment-calendar"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <RecruitmentCalendar />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/recruitment-process/selection-process"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <SelectionProcess />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/recruitment-process/selection-list"
-          element={
-            <motion.div
-              variants={pageVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <SelectionList />
-            </motion.div>
-          }
-        />
-        <Route
           path="/recruitment-process/press-release"
           element={
             <motion.div
@@ -743,6 +655,20 @@ const AnimatedRoutes = () => {
               exit="exit"
             >
               <CheckStatus />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment/status-details"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <StatusDetails />
             </motion.div>
           }
         />
@@ -1206,7 +1132,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/report/online-safety-tips"
+          path="report/online-safety-prevention"
           element={
             <motion.div
               variants={pageVariants}
@@ -1258,7 +1184,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/report/types-of-cyber-crimes"
+          path="/report/cyber-crime-prevention"
           element={
             <motion.div
               variants={pageVariants}
@@ -1266,7 +1192,7 @@ const AnimatedRoutes = () => {
               animate="animate"
               exit="exit"
             >
-              <TypesOfCyberCrimes />
+              <CyberCrimePreventions />
             </motion.div>
           }
         />
@@ -1280,6 +1206,20 @@ const AnimatedRoutes = () => {
               exit="exit"
             >
               <VictimRightsSupport />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/report/victim-support-assistance"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <VictimSupportAssistance />
             </motion.div>
           }
         />
@@ -2427,6 +2367,233 @@ const AnimatedRoutes = () => {
             </motion.div>
           }
         />
+        {/* recruitmentRulesAndPolicies pages */}
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/recruitment-policy-and-employment-overview"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruitmentPolicyAndEmploymentOverView />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/crccf-employment-eligibility-criteria"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EmploymentEligibilityCriteria />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/carrer-development-and-progress"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RulesPoliciesCarrerDevelopmentProgress />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/employee-growth-and-future-opportunities"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EmployeeGrowthAndFutureResposibilities />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/crccf-recruitment-instructions"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <ReqruitmentInstructions />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/crccf-recruitment-guidelines"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruitmentGuidelines />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/crccf-recruitment-and-selection-process"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruitmentAndSelectionProcess />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/crccf-recruitment-calendar"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <RecruitmentCalender />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/code-of-conduct-and-professional-ethics"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <CodeOfConduct />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/training-orientation-and-skill-development"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <TrainingAndSkillDevelopment />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/performance-review-and-evaluation-system"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <PerformanceReviewAndEvaluationSystem />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/employee-rights-and-responsibilities"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EmployeeRightsAndResponsibility />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/volunteer-and-internship-policy"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <VolunteerAndInternshipPolicy />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/recruitment-process/recruitment-rules-policies/employee-recognition-and-awards"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <EmployeeRecognisation />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/job-details/:jobId" // This handles all 40+ job detail pages
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <JobDetailsPage />
+            </motion.div>
+          }
+        />
+        
+        <Route
+          path="/apply/:jobId" // This handles all 40+ application form pages
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <JobApplicationForm />
+            </motion.div>
+          }
+        />
+        {/* Include secondary routes */}
+        <Route path="/*" element={<AnimatedRoutes2 />} />
+
+
+
       </Routes>
     </AnimatePresence>
   );
