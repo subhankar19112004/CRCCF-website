@@ -206,6 +206,7 @@ import VictimSupportAssistance from "./pages/report/VictimSupportAssistance.jsx"
 import AnimatedRoutes2 from "./AnimatedRoutes2.jsx";
 import JobApplicationForm from "./pages/job_vacancy_pages/JobApplicationForm.jsx";
 import JobDetailsPage from "./pages/job_vacancy_pages/JobDetailsPage.jsx";
+import TypesOfCyberCrimes from "./pages/report/TypesOfCyberCrimes.jsx";
 
 
 const pageVariants = {
@@ -313,6 +314,20 @@ const AnimatedRoutes = () => {
               exit="exit"
             >
               <ReportACyberCrime />
+            </motion.div>
+          }
+        />
+
+        <Route
+          path="/report/types-of-cyber-crimes"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <TypesOfCyberCrimes />
             </motion.div>
           }
         />

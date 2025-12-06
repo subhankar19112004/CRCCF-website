@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Prevent text selection globally (you already had this) */
+* {
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -webkit-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+/* Blackout / blur overlay used to hide page when suspicious event occurs */
+#__security_overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999; /* put on top of everything */
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: none; /* toggled via JS */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  pointer-events: none; /* allow js to re-enable if needed */
+}
+
+/* visible state */
+#__security_overlay.visible {
+  display: flex;
+  pointer-events: auto; /* block interaction while overlay visible */
+}
+
+/* optional: small message in center (you may hide if you want) */
+#__security_overlay .msg {
+  font-size: 14px;
+  opacity: 0.9;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.4;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
+
+

@@ -1,34 +1,3 @@
-// // src/components/common/ServicePageLoader.jsx
-// import React from 'react';
-// import { useLocation } from 'react-router-dom';
-// // 1. Import your NEW service-only data file
-// import { allServicesData } from '../../data/OurServices/allServicesData.js'; 
-// import PageTemplate from './PageTemplate.jsx';
-
-// function ServicePageLoader() {
-//   // Get the full path from the URL, e.g., "/services/university-web-development"
-//   const location = useLocation();
-//   const currentPath = location.pathname;
-
-//   // 2. Find the matching data from the 'allServicesData' array
-//   const pageData = allServicesData.find(item => item.path === currentPath);
-
-//   // 3. If no data is found (bad URL), show a 404 message
-//   if (!pageData) {
-//     return (
-//       <div style={{ padding: '2rem' }}>
-//         <h1 className="text-4xl font-bold">404 - Page Not Found</h1>
-//         <p>Sorry, we couldn't find the service page you were looking for.</p>
-//       </div>
-//     );
-//   }
-
-//   // 4. If data IS found, render the template with it
-//   return <PageTemplate data={pageData} />;
-// }
-
-// export default ServicePageLoader;
-
 // src/components/common/ServicePageLoader.jsx
 import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
